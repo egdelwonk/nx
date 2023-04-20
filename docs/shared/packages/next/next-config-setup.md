@@ -67,7 +67,7 @@ const plugins = [
 module.exports = composePlugins(...plugins)(nextConfig);
 ```
 
-This the exported configuration will correctly call each plugin in order and apply their configuration changes to the final object. Note that `composePlugins` function will return an async function, so if you need to debug the configuration you can add a debug plugin as follows.
+This exported configuration will correctly call each plugin in order and apply their configuration changes to the final object. Note that `composePlugins` function will return an async function, so if you need to debug the configuration you can add a debug plugin as follows.
 
 ```js
 module.exports = composePlugins(...plugins, function debug(config) {
